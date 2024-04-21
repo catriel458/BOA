@@ -17,3 +17,12 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburguesaBtn = document.querySelector('.hamburguesa-btn');
+    const listaEncabezado = document.querySelector('.lista-encabezado ul');
+
+    hamburguesaBtn.addEventListener('click', function() {
+        listaEncabezado.classList.toggle('mostrar-menu');
+    });
+});
